@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eddo404 — Welcome</title>
+  <!--
+    Starter index.html for Eddo404.github.io
+    Edit the text below (title, headings, paragraphs) to change your site.
+    Save/commit this file to your repository root (filename: index.html)
+  -->
+  <style>
+    :root{ --bg:#f7f8fa; --card:#ffffff; --accent:#2563eb; --muted:#6b7280; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; background:var(--bg); color:#111}
+    .wrap{max-width:980px;margin:0 auto;padding:36px 20px}
+    header{background:var(--card);padding:18px 20px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);display:flex;align-items:center;justify-content:space-between}
+    header h1{margin:0;font-size:18px;letter-spacing:0.4px}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-size:14px}
+    .hero{margin-top:28px;padding:32px 22px;background:linear-gradient(180deg,rgba(37,99,235,0.06),transparent);border-radius:10px}
+    .hero h2{margin:0 0 8px 0}
+    .btn{display:inline-block;padding:8px 14px;border-radius:8px;text-decoration:none;background:var(--accent);color:#fff;font-weight:600}
+    section{margin-top:20px}
+    footer{margin-top:36px;padding:18px 10px;text-align:center;color:var(--muted);font-size:14px}
+    @media (max-width:520px){header{flex-direction:column;gap:10px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Eddo404</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Hello — I'm Eddie.</h2>
+        <p style="color:var(--muted)">Welcome to my GitHub Pages site. Edit this page by changing <code>index.html</code> in your repository.</p>
+        <p style="margin-top:16px"><a class="btn" href="about.html">Learn more</a></p>
+      </section>
+
+      <section>
+        <h3>Featured</h3>
+        <p style="color:var(--muted)">Put short descriptions of projects, links, or anything you'd like here.</p>
+        <ul>
+          <li>Project A — <a href="#">link</a></li>
+          <li>Project B — <a href="#">link</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>How to edit</h3>
+        <ol>
+          <li>Change the site title: edit the <code>&lt;title&gt;</code> tag in the &lt;head&gt;.</li>
+          <li>Change the header name: edit the <code>&lt;h1&gt;</code> near the top of the &lt;body&gt;.</li>
+          <li>To add a new page, create <code>about.html</code> and link to it from the nav.</li>
+          <li>To add images, create a folder named <code>images</code> and use <code>&lt;img src="images/yourfile.jpg"&gt;</code>.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year">2025</span> Eddo404 — Built with GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    // small script to keep the footer year current
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
